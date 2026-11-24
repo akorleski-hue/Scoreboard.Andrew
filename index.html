@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Scorecards</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        h1:first-of-type {
+            margin-top: 10px;
+        }
+
+        /* Scorecard Table Styling */
+        table {
+            width: 85%;
+            max-width: 900px;
+            margin: 20px auto 40px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #bdc3c7;
+            padding: 12px;
+            text-align: center;
+        }
+
+        thead th {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* First column (Player/Team Name) alignment */
+        tbody td:first-child, thead th:first-child {
+            text-align: left;
+            font-weight: bold;
+            background-color: #ecf0f1;
+            color: #2c3e50;
+        }
+
+        /* Pseudo-class 1: Zebra striping on alternating rows */
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Pseudo-class 2: Highlight row on mouse hover */
+        tbody tr:hover {
+            background-color: #d6eaf8;
+        }
+
+        /* Total Column Highlight */
+        .total-col {
+            font-weight: bold;
+            background-color: #e8f8f5;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #bdc3c7;
+            width: 85%;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SCORECARD 1: GOLF -->
+    <h1>Front 9 Golf Scorecard</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Player / Hole</th>
+                <th>Hole 1</th>
+                <th>Hole 2</th>
+                <th>Hole 3</th>
+                <th>Hole 4</th>
+                <th>Hole 5</th>
+                <th>Hole 6</th>
+                <th>Hole 7</th>
+                <th>Hole 8</th>
+                <th>Hole 9</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Par</td>
+                <td>4</td>
+                <td>3</td>
+                <td>5</td>
+                <td>4</td>
+                <td>4</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>4</td>
+                <td class="total-col">36</td>
+            </tr>
+            <tr>
+                <td>Player 1 (Alex)</td>
+                <td>4</td>
+                <td>3</td>
+                <td>6</td>
+                <td>4</td>
+                <td>5</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>4</td>
+                <td class="total-col">38</td>
+            </tr>
+            <tr>
+                <td>Player 2 (Jordan)</td>
+                <td>5</td>
+                <td>4</td>
+                <td>5</td>
+                <td>3</td>
+                <td>4</td>
+                <td>3</td>
+                <td>5</td>
+                <td>6</td>
+                <td>4</td>
+                <td class="total-col">39</td>
+            </tr>
+            <tr>
+                <td>Player 3 (Taylor)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="total-col"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- SCORECARD 2: BASEBALL -->
+    <h1>Baseball Box Score</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Team / Inning</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>Runs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Visitors (Tigers)</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="total-col">4</td>
+            </tr>
+            <tr>
+                <td>Home (Bears)</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>X</td>
+                <td class="total-col">5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- SCORECARD 3: BOWLING -->
+    <h1>Bowling League Scorecard</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Bowler / Frame</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+                <th>Final</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sam</td>
+                <td>9 /</td>
+                <td>X</td>
+                <td>8 1</td>
+                <td>7 /</td>
+                <td>X</td>
+                <td>X</td>
+                <td>9 -</td>
+                <td>8 /</td>
+                <td>X</td>
+                <td>X 9 1</td>
+                <td class="total-col">176</td>
+            </tr>
+            <tr>
+                <td>Casey</td>
+                <td>7 2</td>
+                <td>8 /</td>
+                <td>6 3</td>
+                <td>X</td>
+                <td>9 /</td>
+                <td>7 1</td>
+                <td>8 /</td>
+                <td>9 -</td>
+                <td>8 1</td>
+                <td>7 / 8</td>
+                <td class="total-col">142</td>
+            </tr>
+            <tr>
+                <td>Morgan</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="total-col"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
